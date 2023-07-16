@@ -190,12 +190,16 @@ input, textarea {
 
 
 #mainServicios {
+    background-image: url(../assets/images/fondo\ servicios.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
 
 #mainServicios section {
-    margin: 3rem;
+    margin: 3rem 3rem 16rem 3rem;
 }
 
 #sectionServicios {

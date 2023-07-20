@@ -1,0 +1,31 @@
+main {
+    h3 {
+        color: whitesmoke;
+        margin: 3rem;
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .portfolioBox {
+            width: 25rem;
+            height: 30rem;
+            margin: 3rem;
+            .imagenPortfolio {
+                width: 25rem;
+                height: 20rem;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+            h4 {
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            .parrafoPortfolio {
+                margin: 1rem;
+            }
+        }
+    }
+}

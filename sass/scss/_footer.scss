@@ -1,0 +1,23 @@
+footer {
+    background-color: black;
+    section {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 0.5rem;
+            a {
+                img {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                }
+            }
+        }
+        p {
+            margin-left: 2rem;
+            color: whitesmoke;
+        }
+    }
+}

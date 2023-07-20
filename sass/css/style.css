@@ -1,0 +1,205 @@
+body {
+  margin: 0%;
+  padding: 0;
+  background-color: #b10909;
+  font-family: 'Geologica', sans-serif;
+  font-weight: lighter;
+  display: grid;
+  grid-template-rows: 8rem 4fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+  body header {
+    grid-area: header; }
+  body main {
+    grid-area: main; }
+  body footer {
+    grid-area: footer; }
+
+header {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  header #logo {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-inline: 5rem; }
+  header nav {
+    width: 80%;
+    font-size: 1rem; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      header nav ul li {
+        list-style-type: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          margin-right: 1rem; }
+
+#mainIndex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  #mainIndex #mainSection {
+    flex-basis: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: center; }
+    #mainIndex #mainSection img {
+      width: 32rem;
+      height: 32rem;
+      object-fit: cover; }
+  #mainIndex aside {
+    background-color: transparent;
+    flex-basis: 60%; }
+    #mainIndex aside h1 {
+      margin-top: 8rem;
+      margin-bottom: 0%;
+      font-size: 5.5rem;
+      color: whitesmoke; }
+    #mainIndex aside h2 {
+      margin-top: 0%;
+      margin-bottom: 0%;
+      font-size: 6.5rem;
+      color: #f5f5cb; }
+    #mainIndex aside p {
+      margin-inline: 5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+      color: whitesmoke; }
+    #mainIndex aside .button {
+      padding: 15px 25px;
+      border-color: white;
+      border-radius: 25px;
+      background-color: transparent;
+      color: whitesmoke;
+      font-size: 1.3rem; }
+      #mainIndex aside .button a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: whitesmoke; }
+
+footer {
+  background-color: black; }
+  footer section {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    footer section div {
+      margin: 0.5rem; }
+      footer section div a img {
+        width: 3.5rem;
+        height: 3.5rem; }
+    footer section p {
+      margin-left: 2rem;
+      color: whitesmoke; }
+
+form {
+  margin-bottom: 4rem; }
+  form div {
+    margin: 1rem 1rem 1rem 6rem; }
+    form div input {
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      background-color: white; }
+    form div textarea {
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      background-color: white; }
+
+#mainServicios {
+  display: flex;
+  flex-direction: column; }
+  #mainServicios section {
+    margin: 3rem 3rem 16rem 3rem; }
+  #mainServicios #sectionServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end; }
+
+main h3 {
+  color: whitesmoke;
+  margin: 3rem;
+  font-size: 3rem;
+  font-weight: lighter; }
+
+main #section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  main #section2 .portfolioBox {
+    width: 25rem;
+    height: 30rem;
+    margin: 3rem; }
+    main #section2 .portfolioBox .imagenPortfolio {
+      width: 25rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 25px; }
+    main #section2 .portfolioBox h4 {
+      font-size: 1.5rem;
+      margin-left: 1rem; }
+    main #section2 .portfolioBox .parrafoPortfolio {
+      margin: 1rem; }
+
+#mainSobreMi #parrafoSobreMi {
+  margin: 7rem;
+  font-size: 1.5rem;
+  color: whitesmoke; }
+
+#mainSobreMi #section3 {
+  margin: 3rem 0rem 5rem 5rem; }
+  #mainSobreMi #section3 .appicon {
+    height: 8rem;
+    width: 8rem;
+    margin: 2rem 3rem 5rem 0rem; }
+  #mainSobreMi #section3 h5 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: beige; }
+
+@media screen and (max-width: 480px) {
+  aside h1 {
+    font-size: 4.5rem; }
+  aside h2 {
+    font-size: 1rem; }
+  .portfolioBox {
+    width: 18rem;
+    height: 28rem;
+    margin: 0.5rem; }
+  .imagenPortfolio {
+    width: 18rem;
+    height: 15rem; } }
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-rows: 20rem 4fr 1fr; }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%; }
+  #logo {
+    margin-inline: 3rem; }
+  header nav ul li {
+    margin-top: 0.5rem; }
+  aside h1 {
+    margin-top: 2rem; }
+  aside p {
+    margin-inline: 1rem; }
+  #mainSection img {
+    width: 20rem;
+    height: 20rem; } }
+
+@media screen and (max-width: 1620px) {
+  aside h2 {
+    font-size: 5rem; } }

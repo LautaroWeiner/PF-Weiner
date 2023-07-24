@@ -3,6 +3,26 @@
     flex-direction: column;
     section {
         margin: 3rem 3rem 16rem 3rem;
+        p {
+            margin: 3rem 5rem 3rem 5rem;
+            font-size: 1.2rem;
+            color: whitesmoke;
+        }
+        div {
+            .button {
+                padding: 15px 25px;
+                border-color: white;
+                border-radius: 25px;
+                background-color: transparent;
+                color: whitesmoke;
+                font-size: 1.3rem;
+                a {
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    color: whitesmoke;
+                }
+            }
+        }
     }
     #sectionServicios {
         display: flex;

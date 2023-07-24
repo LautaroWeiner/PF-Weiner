@@ -5,7 +5,7 @@ body {
   font-family: 'Geologica', sans-serif;
   font-weight: lighter;
   display: grid;
-  grid-template-rows: 8rem 4fr 1fr;
+  grid-template-rows: 8rem 1fr 15rem;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer"; }
   body header {
@@ -14,6 +14,9 @@ body {
     grid-area: main; }
   body footer {
     grid-area: footer; }
+  @media screen and (max-width: 800px) {
+    body {
+      grid-template-rows: 20rem 1fr 15rem; } }
 
 header {
   background-color: transparent;
@@ -25,6 +28,9 @@ header {
     height: 4.5rem;
     width: 4.5rem;
     margin-inline: 5rem; }
+    @media screen and (max-width: 800px) {
+      header #logo {
+        margin-inline: 3rem; } }
   header nav {
     width: 80%;
     font-size: 1rem; }
@@ -33,8 +39,17 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly; }
+      @media screen and (max-width: 800px) {
+        header nav ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0%; } }
       header nav ul li {
         list-style-type: none; }
+        @media screen and (max-width: 800px) {
+          header nav ul li {
+            margin-top: 0.5rem; } }
         header nav ul li a {
           text-decoration: none;
           color: white;
@@ -50,31 +65,49 @@ header {
     display: flex;
     align-items: end;
     justify-content: center; }
-    #mainIndex #mainSection img {
-      width: 32rem;
-      height: 32rem;
+    #mainIndex #mainSection #imagenIndex {
+      width: 34rem;
+      height: 34rem;
       object-fit: cover; }
+      @media screen and (max-width: 800px) {
+        #mainIndex #mainSection #imagenIndex {
+          width: 20rem;
+          height: 20rem; } }
+      @media screen and (max-width: 480px) {
+        #mainIndex #mainSection #imagenIndex {
+          width: 18rem;
+          height: 15rem; } }
   #mainIndex aside {
     background-color: transparent;
     flex-basis: 60%; }
     #mainIndex aside h1 {
-      margin-top: 8rem;
+      margin-top: 10rem;
       margin-bottom: 0%;
       font-size: 5.5rem;
       color: whitesmoke; }
+      @media screen and (max-width: 800px) {
+        #mainIndex aside h1 {
+          margin-top: 2rem; } }
     #mainIndex aside h2 {
-      margin-top: 0%;
+      margin-top: 1rem;
       margin-bottom: 0%;
       font-size: 6.5rem;
       color: #f5f5cb; }
+      @media screen and (max-width: 1620px) {
+        #mainIndex aside h2 {
+          font-size: 5rem; } }
     #mainIndex aside p {
       margin-inline: 5rem;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       font-size: 1.2rem;
       color: whitesmoke; }
+      @media screen and (max-width: 800px) {
+        #mainIndex aside p {
+          margin-inline: 1rem; } }
     #mainIndex aside .button {
       padding: 15px 25px;
+      margin-bottom: 3rem;
       border-color: white;
       border-radius: 25px;
       background-color: transparent;
@@ -120,6 +153,21 @@ form {
   flex-direction: column; }
   #mainServicios section {
     margin: 3rem 3rem 16rem 3rem; }
+    #mainServicios section p {
+      margin: 3rem 5rem 3rem 5rem;
+      font-size: 1.2rem;
+      color: whitesmoke; }
+    #mainServicios section div .button {
+      padding: 15px 25px;
+      border-color: white;
+      border-radius: 25px;
+      background-color: transparent;
+      color: whitesmoke;
+      font-size: 1.3rem; }
+      #mainServicios section div .button a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: whitesmoke; }
   #mainServicios #sectionServicios {
     display: flex;
     flex-direction: column;
@@ -140,11 +188,20 @@ main #section2 {
     width: 25rem;
     height: 30rem;
     margin: 3rem; }
+    @media screen and (max-width: 480px) {
+      main #section2 .portfolioBox {
+        width: 18rem;
+        height: 28rem;
+        margin: 0.5rem; } }
     main #section2 .portfolioBox .imagenPortfolio {
       width: 25rem;
       height: 20rem;
       object-fit: cover;
       border-radius: 25px; }
+      @media screen and (max-width: 480px) {
+        main #section2 .portfolioBox .imagenPortfolio {
+          width: 18rem;
+          height: 15rem; } }
     main #section2 .portfolioBox h4 {
       font-size: 1.5rem;
       margin-left: 1rem; }
@@ -166,40 +223,3 @@ main #section2 {
     font-size: 2rem;
     font-weight: lighter;
     color: beige; }
-
-@media screen and (max-width: 480px) {
-  aside h1 {
-    font-size: 4.5rem; }
-  aside h2 {
-    font-size: 1rem; }
-  .portfolioBox {
-    width: 18rem;
-    height: 28rem;
-    margin: 0.5rem; }
-  .imagenPortfolio {
-    width: 18rem;
-    height: 15rem; } }
-
-@media screen and (max-width: 800px) {
-  body {
-    grid-template-rows: 20rem 4fr 1fr; }
-  header nav ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0%; }
-  #logo {
-    margin-inline: 3rem; }
-  header nav ul li {
-    margin-top: 0.5rem; }
-  aside h1 {
-    margin-top: 2rem; }
-  aside p {
-    margin-inline: 1rem; }
-  #mainSection img {
-    width: 20rem;
-    height: 20rem; } }
-
-@media screen and (max-width: 1620px) {
-  aside h2 {
-    font-size: 5rem; } }

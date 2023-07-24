@@ -8,6 +8,10 @@ header {
         height: 4.5rem;
         width: 4.5rem;
         margin-inline: 5rem;
+
+        @include md {
+            margin-inline: 3rem;
+        }
     }
     nav {
         width: 80%;
@@ -17,8 +21,19 @@ header {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
+
+            @include md {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0%;
+            }
             li {
                 list-style-type: none;
+
+                @include md {
+                    margin-top: 0.5rem;
+                }
                 a {
                     text-decoration: none;
                     color: rgb(255, 255, 255);

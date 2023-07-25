@@ -6,20 +6,20 @@
         p {
             margin: 3rem 5rem 3rem 5rem;
             font-size: 1.2rem;
-            color: whitesmoke;
+            color: $colorDos;
         }
         div {
             .button {
                 padding: 15px 25px;
-                border-color: white;
+                border-color: $colorTres;
                 border-radius: 25px;
                 background-color: transparent;
-                color: whitesmoke;
+                color: $colorTres;
                 font-size: 1.3rem;
                 a {
                     text-decoration: none;
                     font-size: 1.3rem;
-                    color: whitesmoke;
+                    color: $colorDos;
                 }
             }
         }

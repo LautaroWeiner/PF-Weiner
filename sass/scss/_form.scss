@@ -5,12 +5,34 @@ form {
         input {
             padding: 1rem 1.5rem;
             border-radius: 10px;
-            background-color: rgb(255, 255, 255);
+            border-color: $colorDos;
+            background-color: $colorCinco;
+        }
+        input::placeholder {
+            color: $colorDos;
         }
         textarea {
             padding: 1rem 1.5rem;
             border-radius: 10px;
-            background-color: rgb(255, 255, 255);
+            border-color: $colorDos;
+            background-color: $colorCinco;
         }
+        textarea::placeholder {
+            color: $colorDos;
+        }
+        .button {
+            padding: 15px 25px;
+            margin-bottom: 3rem;
+            border-color: $colorDos;
+            border-radius: 25px;
+            background-color: transparent;
+            color: $colorTres;
+            font-size: 1.3rem;
+            a {
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: $colorDos;
+            }
+        }    
     }
 }

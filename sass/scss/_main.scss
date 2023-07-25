@@ -31,7 +31,7 @@
             margin-top: 10rem;
             margin-bottom: 0%;
             font-size: 5.5rem;
-            color: whitesmoke;
+            color: $colorDos;
 
             @include md {
                 margin-top: 2rem;
@@ -41,7 +41,7 @@
             margin-top: 1rem;
             margin-bottom: 0%;
             font-size: 6.5rem;
-            color: rgb(245, 245, 203);
+            color: $colorTres;
 
             @include lg {
                 font-size: 5rem;
@@ -52,7 +52,7 @@
             margin-top: 4rem;
             margin-bottom: 4rem;
             font-size: 1.2rem;
-            color: whitesmoke;
+            color: $colorDos;
 
             @include md {
                 margin-inline: 1rem;
@@ -61,15 +61,15 @@
         .button {
             padding: 15px 25px;
             margin-bottom: 3rem;
-            border-color: rgb(255, 255, 255);
+            border-color: $colorDos;
             border-radius: 25px;
             background-color: transparent;
-            color: whitesmoke;
+            color: $colorTres;
             font-size: 1.3rem;
             a {
                 text-decoration: none;
                 font-size: 1.3rem;
-                color: whitesmoke;
+                color: $colorDos;
             }
         }
     }

@@ -1,9 +1,8 @@
 main {
     h3 {
-        color: whitesmoke;
+        color: $colorDos;
         margin: 3rem;
         font-size: 3rem;
-        font-weight: lighter;
     }
     #section2 {
         display: flex;
@@ -33,9 +32,11 @@ main {
             h4 {
                 font-size: 1.5rem;
                 margin-left: 1rem;
+                color: $colorTres;
             }
             .parrafoPortfolio {
                 margin: 1rem;
+                color: $colorDos;
             }
         }
     }

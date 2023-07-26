@@ -2,6 +2,9 @@ form {
     margin-bottom: 4rem;
     div {
         margin: 1rem 1rem 1rem 6rem;
+        @include sm {
+            margin: 1rem 1rem 1rem 2.7rem;
+        }
         input {
             padding: 1rem 1.5rem;
             border-radius: 10px;
@@ -16,6 +19,17 @@ form {
             border-radius: 10px;
             border-color: $colorDos;
             background-color: $colorCinco;
+            resize: none;
+            
+            @include md {
+                width: 18rem;
+                height: 18rem;
+            }
+
+            @include sm {
+                width: 12rem;
+                height: 12rem;
+            }
         }
         textarea::placeholder {
             color: $colorDos;

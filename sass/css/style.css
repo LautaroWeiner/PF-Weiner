@@ -139,6 +139,9 @@ form {
   margin-bottom: 4rem; }
   form div {
     margin: 1rem 1rem 1rem 6rem; }
+    @media screen and (max-width: 480px) {
+      form div {
+        margin: 1rem 1rem 1rem 2.7rem; } }
     form div input {
       padding: 1rem 1.5rem;
       border-radius: 10px;
@@ -150,7 +153,16 @@ form {
       padding: 1rem 1.5rem;
       border-radius: 10px;
       border-color: whitesmoke;
-      background-color: #ffffff73; }
+      background-color: #ffffff73;
+      resize: none; }
+      @media screen and (max-width: 800px) {
+        form div textarea {
+          width: 18rem;
+          height: 18rem; } }
+      @media screen and (max-width: 480px) {
+        form div textarea {
+          width: 12rem;
+          height: 12rem; } }
     form div textarea::placeholder {
       color: whitesmoke; }
     form div .button {
@@ -170,11 +182,21 @@ form {
   display: flex;
   flex-direction: column; }
   #mainServicios section {
-    margin: 3rem 3rem 16rem 3rem; }
+    margin: 3rem 3rem 2rem 3rem; }
+    #mainServicios section h3 {
+      color: whitesmoke;
+      margin: 3rem;
+      font-size: 3rem; }
+      @media screen and (max-width: 480px) {
+        #mainServicios section h3 {
+          font-size: 2rem; } }
     #mainServicios section p {
       margin: 3rem 5rem 3rem 5rem;
       font-size: 1.2rem;
       color: whitesmoke; }
+      @media screen and (max-width: 480px) {
+        #mainServicios section p {
+          margin: 3rem 1rem 3rem 1rem; } }
     #mainServicios section div .button {
       padding: 15px 25px;
       border-color: #f5f5cb;
@@ -219,10 +241,12 @@ main #section2 {
         main #section2 .portfolioBox .imagenPortfolio {
           width: 18rem;
           height: 15rem; } }
-    main #section2 .portfolioBox h4 {
-      font-size: 1.5rem;
-      margin-left: 1rem;
-      color: #f5f5cb; }
+    main #section2 .portfolioBox a {
+      text-decoration: none; }
+      main #section2 .portfolioBox a h4 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        color: #f5f5cb; }
     main #section2 .portfolioBox .parrafoPortfolio {
       margin: 1rem;
       color: whitesmoke; }

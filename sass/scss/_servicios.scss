@@ -2,11 +2,22 @@
     display: flex;
     flex-direction: column;
     section {
-        margin: 3rem 3rem 16rem 3rem;
+        margin: 3rem 3rem 2rem 3rem;
+        h3 {
+            color: $colorDos;
+        margin: 3rem;
+        font-size: 3rem;
+        @include sm {
+            font-size: 2rem;
+        }
+        }
         p {
             margin: 3rem 5rem 3rem 5rem;
             font-size: 1.2rem;
             color: $colorDos;
+            @include sm {
+                margin: 3rem 1rem 3rem 1rem;
+            }
         }
         div {
             .button {

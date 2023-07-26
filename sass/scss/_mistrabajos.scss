@@ -29,10 +29,13 @@ main {
                     height: 15rem;
                 }
             }
-            h4 {
+            a {
+                text-decoration: none;
+                h4 {
                 font-size: 1.5rem;
                 margin-left: 1rem;
                 color: $colorTres;
+            }
             }
             .parrafoPortfolio {
                 margin: 1rem;

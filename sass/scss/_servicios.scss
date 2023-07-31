@@ -27,10 +27,62 @@
                 background-color: transparent;
                 color: $colorTres;
                 font-size: 1.3rem;
+                
+                &:hover {
+                    animation-name: animacion2;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                    animation-duration: 3s;
+                    animation-delay: 0s;
+    
+                    @keyframes animacion2 {
+                        0% {
+                            border-color: $colorDos;
+                        }
+                        25% {
+                            border-color: $colorOcho;
+                        }
+                        50% {
+                            border-color: $colorSeis;
+                        }
+                        75% {
+                            border-color: $colorSiete;
+                        }
+                        100% {
+                            border-color: $colorDos;
+                        }
+                    }
+                }
                 a {
                     text-decoration: none;
                     font-size: 1.3rem;
                     color: $colorDos;
+    
+                    &:hover {
+                        animation-name: animacion4;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in;
+                        animation-duration: 2s;
+                        animation-delay: 0s;
+    
+                        @keyframes animacion4 {
+                            0% {
+                                color: $colorDos;
+                            }
+                            25% {
+                                color: $colorSiete;
+                            }
+                            50% {
+                                color: $colorOcho;
+                            }
+                            75% {
+                                color: $colorSeis;
+                            }
+                            100% {
+                                color: $colorDos;
+                            }
+                        }
+                    }
                 }
             }
         }

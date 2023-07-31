@@ -2,19 +2,38 @@
     #parrafoSobreMi {
         margin: 7rem;
         font-size: 1.5rem;
-        color: $colorDos
+        color: $colorDos;
+
+        @include sm {
+            margin: 2rem;
+        }
     }
+
     #section3 {
         margin: 3rem 0rem 5rem 5rem;
         .appicon {
             height: 8rem;
             width: 8rem;
             margin: 2rem 3rem 5rem 0rem;
+
+            @include sm {
+                height: 5rem;
+                width: 5rem;
+                margin: 1rem 2rem 3rem 0rem;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
         h5 {
             font-size: 2rem;
             font-weight: lighter;
             color: $colorTres;
+        }
+
+        @include sm {
+            margin: 3rem 0rem 1.5rem 1.5rem;
         }
     }
 }

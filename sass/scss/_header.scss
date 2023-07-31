@@ -31,6 +31,10 @@ header {
             li {
                 list-style-type: none;
 
+                &:hover {
+                    transform: scale(1.1);
+                }
+
                 @include md {
                     margin-top: 0.5rem;
                 }
@@ -39,6 +43,32 @@ header {
                     color: $colorTres;
                     font-size: 1.5rem;
                     margin-right: 1rem;
+
+                    &:hover {
+                        animation-name: animacion1;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease;
+                        animation-duration: 3s;
+                        animation-delay: 0s;
+
+                        @keyframes animacion1 {
+                            0% {
+                                color: $colorTres;
+                            }
+                            25% {
+                                color: $colorSeis;
+                            }
+                            50% {
+                                color: $colorSiete;
+                            }
+                            75% {
+                                color: $colorOcho;
+                            }
+                            100% {
+                                color: $colorTres;
+                            }
+                        }
+                    }
                 }
             }
         }

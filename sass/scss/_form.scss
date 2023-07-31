@@ -42,11 +42,33 @@ form {
             background-color: transparent;
             color: $colorTres;
             font-size: 1.3rem;
-            a {
-                text-decoration: none;
-                font-size: 1.3rem;
-                color: $colorDos;
+            
+            &:hover {
+                animation-name: animacion2;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                animation-duration: 3s;
+                animation-delay: 0s;
+
+                @keyframes animacion2 {
+                    0% {
+                        border-color: $colorDos;
+                    }
+                    25% {
+                        border-color: $colorOcho;
+                    }
+                    50% {
+                        border-color: $colorSeis;
+                    }
+                    75% {
+                        border-color: $colorSiete;
+                    }
+                    100% {
+                        border-color: $colorDos;
+                    }
+                }
             }
+
         }    
     }
 }

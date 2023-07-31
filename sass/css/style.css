@@ -47,6 +47,8 @@ header {
           padding: 0%; } }
       header nav ul li {
         list-style-type: none; }
+        header nav ul li:hover {
+          transform: scale(1.1); }
         @media screen and (max-width: 800px) {
           header nav ul li {
             margin-top: 0.5rem; } }
@@ -55,6 +57,24 @@ header {
           color: #f5f5cb;
           font-size: 1.5rem;
           margin-right: 1rem; }
+          header nav ul li a:hover {
+            animation-name: animacion1;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-duration: 3s;
+            animation-delay: 0s; }
+
+@keyframes animacion1 {
+  0% {
+    color: #f5f5cb; }
+  25% {
+    color: #7e7eff; }
+  50% {
+    color: #fdfd65; }
+  75% {
+    color: #ff74b0; }
+  100% {
+    color: #f5f5cb; } }
 
 #mainIndex {
   display: flex;
@@ -113,10 +133,46 @@ header {
       background-color: transparent;
       color: #f5f5cb;
       font-size: 1.3rem; }
+      #mainIndex aside .button:hover {
+        animation-name: animacion2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 3s;
+        animation-delay: 0s; }
+
+@keyframes animacion2 {
+  0% {
+    border-color: whitesmoke; }
+  25% {
+    border-color: #ff74b0; }
+  50% {
+    border-color: #7e7eff; }
+  75% {
+    border-color: #fdfd65; }
+  100% {
+    border-color: whitesmoke; } }
       #mainIndex aside .button a {
         text-decoration: none;
         font-size: 1.3rem;
         color: whitesmoke; }
+        #mainIndex aside .button a:hover {
+          animation-name: animacion4;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in;
+          animation-duration: 2s;
+          animation-delay: 0s; }
+
+@keyframes animacion4 {
+  0% {
+    color: whitesmoke; }
+  25% {
+    color: #fdfd65; }
+  50% {
+    color: #ff74b0; }
+  75% {
+    color: #7e7eff; }
+  100% {
+    color: whitesmoke; } }
 
 footer {
   background-color: black; }
@@ -173,10 +229,24 @@ form {
       background-color: transparent;
       color: #f5f5cb;
       font-size: 1.3rem; }
-      form div .button a {
-        text-decoration: none;
-        font-size: 1.3rem;
-        color: whitesmoke; }
+      form div .button:hover {
+        animation-name: animacion2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 3s;
+        animation-delay: 0s; }
+
+@keyframes animacion2 {
+  0% {
+    border-color: whitesmoke; }
+  25% {
+    border-color: #ff74b0; }
+  50% {
+    border-color: #7e7eff; }
+  75% {
+    border-color: #fdfd65; }
+  100% {
+    border-color: whitesmoke; } }
 
 #mainServicios {
   display: flex;
@@ -204,10 +274,46 @@ form {
       background-color: transparent;
       color: #f5f5cb;
       font-size: 1.3rem; }
+      #mainServicios section div .button:hover {
+        animation-name: animacion2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 3s;
+        animation-delay: 0s; }
+
+@keyframes animacion2 {
+  0% {
+    border-color: whitesmoke; }
+  25% {
+    border-color: #ff74b0; }
+  50% {
+    border-color: #7e7eff; }
+  75% {
+    border-color: #fdfd65; }
+  100% {
+    border-color: whitesmoke; } }
       #mainServicios section div .button a {
         text-decoration: none;
         font-size: 1.3rem;
         color: whitesmoke; }
+        #mainServicios section div .button a:hover {
+          animation-name: animacion4;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in;
+          animation-duration: 2s;
+          animation-delay: 0s; }
+
+@keyframes animacion4 {
+  0% {
+    color: whitesmoke; }
+  25% {
+    color: #fdfd65; }
+  50% {
+    color: #ff74b0; }
+  75% {
+    color: #7e7eff; }
+  100% {
+    color: whitesmoke; } }
   #mainServicios #sectionServicios {
     display: flex;
     flex-direction: column;
@@ -255,6 +361,9 @@ main #section2 {
   margin: 7rem;
   font-size: 1.5rem;
   color: whitesmoke; }
+  @media screen and (max-width: 480px) {
+    #mainSobreMi #parrafoSobreMi {
+      margin: 2rem; } }
 
 #mainSobreMi #section3 {
   margin: 3rem 0rem 5rem 5rem; }
@@ -262,7 +371,17 @@ main #section2 {
     height: 8rem;
     width: 8rem;
     margin: 2rem 3rem 5rem 0rem; }
+    @media screen and (max-width: 480px) {
+      #mainSobreMi #section3 .appicon {
+        height: 5rem;
+        width: 5rem;
+        margin: 1rem 2rem 3rem 0rem; } }
+    #mainSobreMi #section3 .appicon:hover {
+      transform: scale(1.2); }
   #mainSobreMi #section3 h5 {
     font-size: 2rem;
     font-weight: lighter;
     color: #f5f5cb; }
+  @media screen and (max-width: 480px) {
+    #mainSobreMi #section3 {
+      margin: 3rem 0rem 1.5rem 1.5rem; } }
